@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_ten"
+        android:paddingStart="@dimen/dimen_ten"
+        android:paddingEnd="@dimen/dimen_ten"
+        android:paddingRight="@dimen/dimen_ten"
+        android:paddingTop="@dimen/dimen_ten"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/plot_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_ten"
+        android:paddingStart="@dimen/dimen_ten"
+        android:paddingEnd="@dimen/dimen_ten"
+        android:textSize="@dimen/text_size_plot"
+        android:layout_below="@id/imageView"/>
+
+    <TextView
+        android:id="@+id/title_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_ten"
+        android:textSize="@dimen/text_size_title"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_toEndOf="@id/imageView"/>
+
+    <TextView
+        android:id="@+id/release_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_ten"
+        android:textSize="@dimen/text_size_release"
+        android:layout_below="@id/title_textView"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_toEndOf="@id/imageView"/>
+
+    <TextView
+        android:id="@+id/rating_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_ten"
+        android:textSize="@dimen/text_size_rating"
+        android:layout_below="@id/release_textView"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_toEndOf="@id/imageView"/>
+
+
+
+</RelativeLayout>
